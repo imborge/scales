@@ -13,11 +13,15 @@ to practice Haskell.
 
 1. Build:
 
-```$ stack build```
+```bash
+$ stack build
+```
 
 2. Run:
 
-```$ stack exec scales```
+```bash
+$ stack exec scales
+```
 
 ## Todo
 
