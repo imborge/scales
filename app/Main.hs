@@ -1,10 +1,10 @@
 module Main where
 
-import Control.Exception
-import Control.Monad (join, forever)
+import Control.Exception (handle, displayException)
+import Control.Monad (forever)
 import System.Exit (exitSuccess, exitFailure)
-import System.IO
-import System.IO.Error
+import System.IO (hSetBuffering, stdout, BufferMode(NoBuffering))
+import System.IO.Error (IOError, isEOFError)
 
 import Scales
 
